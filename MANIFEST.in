@@ -1,0 +1,4 @@
+include python_requests_anonymous_session/browsers.json.gz
+include README.md
+include LICENSE
+include requirements.txt
