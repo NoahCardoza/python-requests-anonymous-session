@@ -8,7 +8,7 @@
 pip install python-requests-anonymous-session
 ```
 
-## Useage
+## Usage
 
 Note: `AnonymousSession` inherits from `requests.Session`.
 
