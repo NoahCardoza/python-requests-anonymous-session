@@ -1,10 +1,10 @@
 import unittest
-from python_requests_anonymous_session import AnonymosSession
+from python_requests_anonymous_session import AnonymousSession
 
 
 class TestRandomUserAgent(unittest.TestCase):
     def setUp(self):
-        self.session = AnonymosSession()
+        self.session = AnonymousSession()
 
     def tearDown(self):
         self.session.close()
@@ -19,7 +19,7 @@ class TestRandomUserAgent(unittest.TestCase):
         # TODO(dw): This could occasionally fail
         self.assertNotEqual(
             self.session.headers['User-Agent'],
-            AnonymosSession().headers['User-Agent']
+            AnonymousSession().headers['User-Agent']
         )
 
     def test_request(self):
