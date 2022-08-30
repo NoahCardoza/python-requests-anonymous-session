@@ -149,9 +149,9 @@ class CipherSuiteAdapter(HTTPAdapter):
         return super(CipherSuiteAdapter, self).proxy_manager_for(*args, **kwargs)
 
 
-class AnonymosSession(Session):
+class AnonymousSession(Session):
     def __init__(self, *args, browser=None, **kwargs):
-        super(AnonymosSession, self).__init__(*args, **kwargs)
+        super(AnonymousSession, self).__init__(*args, **kwargs)
 
         user_agent_manager = UserAgent(browser=browser)
 
